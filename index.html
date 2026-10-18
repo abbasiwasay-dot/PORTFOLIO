@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abdul Wasay — web developer portfolio.">
+  <title>ABDUL WASAY — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="boot-screen" id="bootScreen">
+    <div class="boot-window">
+      <div class="boot-brand">
+        <span class="boot-mark">W</span>
+        <div>
+          <strong>ABDUL WASAY</strong>
+          <small>PERSONAL DEVELOPER WORKSPACE</small>
+        </div>
+      </div>
+      <div class="boot-log" id="bootLog"></div>
+      <div class="boot-progress">
+        <span id="bootProgress"></span>
+      </div>
+      <p class="boot-hint">INITIALIZING PORTFOLIO<span class="blink">_</span></p>
+    </div>
+  </div>
+
+  <div class="desktop" id="desktop">
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <header class="topbar">
+      <a class="os-brand" href="#home">
+        <span class="brand-icon">W</span>
+        <span>ABDUL WASAY</span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About</a>
+      </nav>
+      <a class="top-contact" href="#contact">
+        <i class="status-dot"></i> LET'S CONNECT ↗
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero section-shell" id="home">
+        <div class="hero-copy reveal">
+          <div class="system-label">
+            <i class="status-dot"></i> SYSTEM ONLINE <b>/</b> WEB DEVELOPER
+          </div>
+          <p class="overline">HELLO, WORLD. I'M ABDUL WASAY.</p>
+          <h1>
+            I turn ideas into<br>
+            <span class="gradient-text hero-typed-line">
+              <span id="typedText">digital experiences.</span>
+            </span>
+          </h1>
+          <p class="hero-description">
+            I build responsive websites and useful web experiences — from polished interfaces to practical features powered by PHP and MySQL.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="button button-primary">Explore my work <span>↘</span></a>
+            <a href="#contact" class="button button-ghost">Contact me <span>↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <span><i class="mini-dot"></i> Currently learning by building</span>
+            <span>·</span>
+            <span>Based in Pakistan</span>
+          </div>
+        </div>
+        <div class="os-window hero-window reveal" data-delay="150">
+          <div class="window-bar">
+            <div class="window-controls">
+              <i></i>
+              <i></i>
+              <i></i>
+            </div>
+            <span class="window-title">abdul@workspace — ~/portfolio</span>
+            <span>•••</span>
+          </div>
+          <div class="terminal-body">
+            <div>
+              <b class="prompt">abdul@os</b>
+              <span class="terminal-path">:~$</span> whoami
+            </div>
+            <p>Abdul Wasay <em>// web developer</em></p>
+            <div>
+              <b class="prompt">abdul@os</b>
+              <span class="terminal-path">:~$</span> cat focus.txt
+            </div>
+            <p>Build. Solve. Improve.</p>
+            <div>
+              <b class="prompt">abdul@os</b>
+              <span class="terminal-path">:~$</span> ls projects/
+            </div>
+            <div class="file-list">
+              <span>▣ &nbsp; blaze.php</span>
+              <span>◈ &nbsp; orbit.ui</span>
+              <span>▤ &nbsp; office-portal.db</span>
+            </div>
+            <div class="terminal-last">
+              <b class="prompt">abdul@os</b>
+              <span class="terminal-path">:~$</span> 
+              <span class="blink">_</span>
+            </div>
+          </div>
+          <div class="window-footer">
+            <span><i class="status-dot"></i> WORKSPACE READY</span>
+            <span>UTF-8 &nbsp; | &nbsp; MAIN</span>
+          </div>
+        </div>
+        <div class="hero-side-note">PORTFOLIO.EXE <span>v1.0.26</span></div>
+      </section>
+
+      <section class="ticker">
+        <div class="ticker-track">
+          <span>HTML5</span><b>✳</b>
+          <span>CSS3</span><b>✳</b>
+          <span>JAVASCRIPT</span><b>✳</b>
+          <span>PHP</span><b>✳</b>
+          <span>MYSQL</span><b>✳</b>
+          <span>RESPONSIVE UI</span><b>✳</b>
+          <span>HTML5</span><b>✳</b>
+          <span>CSS3</span><b>✳</b>
+          <span>JAVASCRIPT</span><b>✳</b>
+          <span>PHP</span><b>✳</b>
+          <span>MYSQL</span><b>✳</b>
+          <span>RESPONSIVE UI</span>
+        </div>
+      </section>
+
+      <section class="content-section section-shell" id="skills">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">01 / TOOLKIT</p>
+            <h2>My developer <span class="gradient-text">stack.</span></h2>
+          </div>
+          <p class="section-note">Tools I use to turn a concept into a working website.</p>
+        </div>
+        <div class="skills-layout">
+          <article class="skill-console reveal">
+            <div class="console-head">
+              <span>STACK_MONITOR</span>
+              <span class="console-live"><i class="status-dot"></i> ACTIVE</span>
+            </div>
+            <div class="console-graphic">
+              <div class="orbit-ring ring-a"></div>
+              <div class="orbit-ring ring-b"></div>
+              <div class="orbit-ring ring-c"></div>
+              <div class="core-logo">W<span>.</span></div>
+              <span class="orbit-label label-top">FRONTEND</span>
+              <span class="orbit-label label-right">BACKEND</span>
+              <span class="orbit-label label-bottom">DATABASE</span>
+            </div>
+            <div class="console-foot">
+              <span>LEARNING MODE</span>
+              <span>ALWAYS ON <b class="blink">_</b></span>
+            </div>
+          </article>
+          <div class="skills-list">
+            <article class="skill-row reveal">
+              <div class="skill-number">01</div>
+              <div class="skill-info">
+                <h3>Frontend</h3>
+                <p>Semantic structure, responsive layouts, visual polish and interactivity.</p>
+                <div class="skill-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+              </div>
+              <div class="skill-symbol">⌘</div>
+            </article>
+            <article class="skill-row reveal">
+              <div class="skill-number">02</div>
+              <div class="skill-info">
+                <h3>Backend & data</h3>
+                <p>Server-side PHP, form handling, authentication and relational data.</p>
+                <div class="skill-tags">
+                  <span>PHP</span>
+                  <span>MySQL</span>
+                </div>
+              </div>
+              <div class="skill-symbol">⟨/⟩</div>
+            </article>
+            <article class="skill-row reveal">
+              <div class="skill-number">03</div>
+              <div class="skill-info">
+                <h3>Website tools</h3>
+                <p>Converting supplied designs into code and building with familiar CMS tools.</p>
+                <div class="skill-tags">
+                  <span>VS CODE</span>
+                  <span>WordPress</span>
+                  <span>Elementor</span>
+                </div>
+              </div>
+              <div class="skill-symbol">◈</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-section projects-section section-shell" id="projects">
+        <div class="section-heading reveal">
+          <div>
+            <p class="section-index">02 / SELECTED WORK</p>
+            <h2>Projects from my <span class="gradient-text">workspace.</span></h2>
+          </div>
+          <p class="section-note">Each project helped me practice a different part of building for the web.</p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-featured reveal">
+            <div class="project-visual blaze-visual">
+             <img class="image" src="images/blaze.png" alt="blaze" loading="lazy">
+              <span class="visual-index">PROJECT_01 / PHP + MYSQL</span>
+            </div>
+            <div class="project-info">
+              <div class="project-topline">
+                <span class="project-type">FULL WEB PROJECT</span>
+                <span class="project-status"><i></i> BUILT</span>
+              </div>
+              <h3>BLAZE <span class="project-arrow">↗</span></h3>
+              <p>A food ordering website with a dynamic menu, shopping cart, authentication, and an admin dashboard for managing menu items.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/abbasiwasay-dot/BLAZE.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub source" title="GitHub">◉</a>
+                <a href="https://blaze.42web.io" target="_blank" rel="noopener noreferrer" aria-label="Live website" title="Live website">↗</a>
+              </div>
+            </div>
+          </article>
+          
+          <article class="project-card reveal" data-delay="100">
+            <div class="project-visual orbit-visual">
+              <img class="image" src="images/orbit.png" alt="orbit" loading="lazy">
+              <span class="visual-index">PROJECT_02 / FRONTEND</span>
+            </div>
+            <div class="project-info">
+              <div class="project-topline">
+                <span class="project-type">FASHION STOREFRONT</span>
+                <span class="project-status"><i></i> BUILT</span>
+              </div>
+              <h3>ORBIT <span class="project-arrow">↗</span></h3>
+              <p>A fashion e-commerce frontend with product browsing, clean visual hierarchy and responsive layouts.</p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/abbasiwasay-dot/orbit-shopping.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub source" title="GitHub">◉</a>
+                <a href="https://abbasiwasay-dot.github.io/orbit-shopping/" target="_blank" rel="noopener noreferrer" aria-label="Live website" title="Live website">↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-delay="200">
+            <div class="project-visual student-visual">
+            <img class="image" src="images/officeportal.png" alt="portal" loading="lazy">
+              <span class="visual-index">PROJECT_03 / PHP + MYSQL</span>
+            </div>
+            <div class="project-info">
+              <div class="project-topline">
+                <span class="project-type">FRONTEND UI</span>
+                <span class="project-status"><i></i> BUILT</span>
+              </div>
+              <h3>Office Portal System <span class="project-arrow">↗</span></h3>
+              <p>A role-based office portal with login, an administrator dashboard and an employee dashboard, built with PHP and MySQL.</p>
+              <div class="project-tags">
+                <span>PHP</span>
+                <span>MYSQL</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/abbasiwasay-dot/office-portal.git" target="_blank" rel="noopener noreferrer" aria-label="GitHub source" title="GitHub">◉</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="content-section about-section section-shell" id="about">
+        <div class="about-panel reveal">
+          <div class="about-copy">
+            <p class="section-index">03 / ABOUT THE DEVELOPER</p>
+            <h2>Curious mind.<br><span class="gradient-text">Builder mindset.</span></h2>
+            <p>I'm a web developer learning by building real projects. I enjoy turning ideas and supplied designs into responsive websites, then adding practical features that make them useful.</p>
+            <p>My focus is to write clearer code, understand the tools I use, and keep improving with every build.</p>
+            <a class="button button-ghost" href="#contact">Let's talk ↗</a>
+          </div>
+          <div class="about-terminal">
+            <div class="console-head">
+              <span>ABOUT_ME.TXT</span>
+              <span>READ ONLY</span>
+            </div>
+            <div class="about-code">
+              <p><span>01</span> const developer = {</p>
+              <p><span>02</span> &nbsp; mindset: <b>"learn by building"</b>,</p>
+              <p><span>03</span> &nbsp; values: [</p>
+              <p><span>04</span> &nbsp;&nbsp; "clear code",</p>
+              <p><span>05</span> &nbsp;&nbsp; "useful features",</p>
+              <p><span>06</span> &nbsp;&nbsp; "continuous growth"</p>
+              <p><span>07</span> &nbsp; ]</p>
+              <p><span>08</span> };</p>
+              <p class="code-success"><span>09</span> // still shipping, still learning <b>✓</b></p>
+            </div>
+            <div class="about-terminal-foot">
+              <span>ABDUL WASAY</span>
+              <span>END OF FILE</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section section-shell" id="contact">
+        <div class="contact-window reveal">
+          <div class="contact-content">
+            <p class="section-index">04 / CONNECTION REQUEST</p>
+            <h2>Have a project<br>in <span class="gradient-text">mind?</span></h2>
+            <p>Tell me what you're planning. Let's turn your idea into a useful website.</p>
+            <div class="contact-note">
+              <span class="mini-dot"></span> OPEN TO FREELANCE &amp; COLLABORATIONS
+            </div>
+            <div class="contact-stamp">
+              READY<br>TO BUILD<span>✳</span>
+            </div>
+          </div>
+         <form id="contactForm" class="contact-form">
+  <div class="contact-form-row">
+    <label>Your name
+      <input name="name" required placeholder="Full name">
+    </label>
+    <label>Your email
+      <input name="email" type="email" required placeholder="you@example.com">
+    </label>
+  </div>
+  
+  <label>Project type
+    <select name="project" required>
+      <option value="" disabled selected>Choose a project type</option>
+      <option>Business website</option>
+      <option>E-commerce website</option>
+      <option>Landing page</option>
+      <option>Website fixes</option>
+      <option>Other</option>
+    </select>
+  </label>
+  
+  <label>Project details
+    <textarea name="details" required placeholder="Tell me about your idea..."></textarea>
+  </label>
+  
+  <button class="button button-primary" type="submit">Prepare message ↗</button>
+</form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer section-shell">
+      <a class="os-brand" href="#home">
+        <span class="brand-icon">W</span>
+        <span>ABDUL WASAY</span>
+      </a>
+      <span>DESIGNED TO KEEP IMPROVING <b>↗</b></span>
+      <span>© <span id="year">2026</span> ABDUL WASAY</span>
+    </footer>
+    <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+  </div>
+</body>
+</html>
