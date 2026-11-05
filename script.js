@@ -26,6 +26,11 @@
 
     $('mt').onclick = function () {
         var isOpen = $('nav').classList.toggle('open');
+        var icon = this.querySelector('i');
+
+        icon.classList.toggle('fa-bars', !isOpen);
+        icon.classList.toggle('fa-xmark', isOpen);
+
         this.setAttribute('aria-expanded', isOpen);
     };
 
@@ -34,6 +39,10 @@
     navLinks.forEach(function (link) {
         link.onclick = function () {
             $('nav').classList.remove('open');
+
+            $('mt').querySelector('i').classList.replace('fa-xmark', 'fa-bars');
+
+            $('mt').setAttribute('aria-expanded', false);
         };
     });
 
