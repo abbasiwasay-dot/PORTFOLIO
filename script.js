@@ -29,7 +29,7 @@
         var icon = this.querySelector('i');
 
         icon.classList.toggle('fa-bars', !isOpen);
-        icon.classList.toggle('fa-xmark', isOpen);
+        icon.classList.toggle('fa-x', isOpen);
 
         this.setAttribute('aria-expanded', isOpen);
     };
